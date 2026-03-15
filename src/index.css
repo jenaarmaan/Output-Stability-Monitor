@@ -52,7 +52,7 @@ body {
 .title-gradient {
   background: linear-gradient(135deg, #fff 0%, #38bdf8 100%);
   background-clip: text;
-  -webkit-background-clip: text;
+  -webkit-background-clip: text; 
   -webkit-text-fill-color: transparent;
   font-weight: 800;
   letter-spacing: -0.025em;
@@ -179,4 +179,4 @@ input[type="range"]::-webkit-slider-thumb {
   filter: brightness(1.2);
   transform: scale(1.1);
   z-index: 10;
-}
+} 
