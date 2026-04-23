@@ -12,7 +12,7 @@ import {
   Download,
   Settings2
 } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 
 // Hooks & Utils
 import { useStabilityAnalysis } from './hooks/useStabilityAnalysis';
@@ -64,7 +64,8 @@ export default function App() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="inline-flex items-center gap-3 px-4 py-2 rounded-full glass-panel mb-8 border-primary/20"
           >
-            <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+            <img src="/logo.png" alt="Logo" className="w-5 h-5 object-contain" />
+            <div className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
             <span className="text-xs font-bold tracking-widest uppercase text-primary">Stability Engine v2.0</span>
           </motion.div>
           

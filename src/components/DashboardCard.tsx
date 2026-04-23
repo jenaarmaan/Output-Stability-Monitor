@@ -19,7 +19,7 @@ const DashboardCard: React.FC<DashboardCardProps> = ({ title, icon: Icon, childr
       <div className="p-2 rounded-lg bg-blue-500/10 text-primary">
         <Icon size={20} />
       </div>
-      <h3 className="text-sm font-semibold text-text-secondary uppercase tracking-wider">{title}</h3>
+      <h3 className="text-sm font-semibold text-text-muted uppercase tracking-wider">{title}</h3>
     </div>
     {children}
   </motion.div>

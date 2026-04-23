@@ -229,6 +229,7 @@ textarea:focus, select:focus, input:focus {
 /* Sliders */
 input[type="range"] {
   -webkit-appearance: none;
+  appearance: none;
   background: var(--border-glass);
   height: 6px;
   border-radius: 3px;
@@ -236,6 +237,7 @@ input[type="range"] {
 
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
+  appearance: none;
   width: 20px;
   height: 20px;
   background: white;
@@ -243,4 +245,28 @@ input[type="range"]::-webkit-slider-thumb {
   border-radius: 50%;
   cursor: pointer;
   box-shadow: 0 0 15px rgba(var(--primary-rgb), 0.5);
+}
+
+/* Utility Classes */
+.text-primary { color: var(--primary); }
+.text-secondary { color: var(--secondary); }
+.text-text-muted { color: var(--text-muted); }
+.text-success { color: var(--success); }
+.text-warning { color: var(--warning); }
+.text-danger { color: var(--danger); }
+
+.bg-primary { background-color: var(--primary); }
+.bg-secondary { background-color: var(--secondary); }
+.bg-danger { background-color: var(--danger); }
+
+.font-mono { font-family: var(--font-mono); }
+
+/* Animation Overrides */
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }

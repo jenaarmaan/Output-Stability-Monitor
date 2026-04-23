@@ -32,7 +32,7 @@ const DiffViewer: React.FC<DiffViewerProps> = ({ text1, text2 }) => {
 
   if (isProcessing) {
     return (
-      <div className="p-8 flex items-center justify-center text-text-secondary animate-pulse">
+      <div className="p-8 flex items-center justify-center text-text-muted animate-pulse">
         Computing differences...
       </div>
     );
