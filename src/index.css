@@ -90,6 +90,7 @@ body {
   letter-spacing: -0.05em;
   background: linear-gradient(to bottom right, #fff 30%, rgba(255, 255, 255, 0.5));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 1rem;
 }
@@ -97,6 +98,7 @@ body {
 .text-gradient {
   background: linear-gradient(90deg, var(--primary), var(--secondary));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
